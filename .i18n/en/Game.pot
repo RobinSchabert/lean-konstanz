@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-23\n"
+"POT-Creation-Date: 2026-03-19\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -13,6 +13,7 @@ msgid "level completed with warnings… 🎭"
 msgstr ""
 
 #: Game.Levels.DemoWorld.L01_HelloWorld
+#: Game.Levels.MyWorld.L01_hello
 msgid "Hello World"
 msgstr ""
 
@@ -32,6 +33,10 @@ msgstr ""
 #. §0: `«{g}»`
 #: Game.Levels.DemoWorld.L01_HelloWorld
 msgid "You should use §0 now."
+msgstr ""
+
+#: Game.Levels.MyWorld.L01_hello
+msgid "The message shown when the level is completed"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -61,6 +66,14 @@ msgid "This text is shown as first message when the level is played.\n"
 "depending on the proof a user provides."
 msgstr ""
 
+#: Game.Levels.MyWorld.L01_hello
+msgid "A message shown at the beginning of the level. Use it to explain any new concepts."
+msgstr ""
+
+#: Game.Levels.MyWorld
+msgid "This introduction text is shown when one first enters a world."
+msgstr ""
+
 #: Game.Levels.DemoWorld
 msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
 msgstr ""
@@ -75,6 +88,15 @@ msgstr ""
 msgid "Demo World"
 msgstr ""
 
+#: Game.Levels.MyWorld
+msgid "My First World"
+msgstr ""
+
 #: Game
 msgid "Game Template"
+msgstr ""
+
+#. §0: $\\iff$
+#: Game.Levels.MyWorld.L01_hello
+msgid "The exercise statement in natural language using latex: §0."
 msgstr ""
