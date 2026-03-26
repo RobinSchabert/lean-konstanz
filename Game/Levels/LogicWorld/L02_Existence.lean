@@ -1,0 +1,31 @@
+import Game.Metadata
+import Mathlib.Data.Nat.Basic
+
+World "LogicWorld"
+Level 2
+
+Title "Hello World"
+
+Introduction "The classical abbreviation of the existence statement
+encountered in the previous level is the divisibilty statement $2 ∣ 6$.
+In the following we will use this abbreviation which is predefined in Lean
+as $a | b :⇔ ∃ k:ℕ, b = a*k$. The divisibilty statement can be treated
+exactly like the equivalent existence statement.
+
+To prove simple equalities involving addition and multiplications
+you can use the **linarith** tactic.
+"
+
+Statement (a:ℕ): a ∣ a := by
+  sorry
+
+Conclusion "Congratulation, you have completed the second level!"
+
+/- Use these commands to add items to the game's inventory. -/
+/--
+If your goal is an equality statement where the two sides are
+equal but not identical due to simple arithmetic operations,
+you can use the linarith tactic to prove it.
+-/
+TacticDoc linarith
+NewTactic linarith

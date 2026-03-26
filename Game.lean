@@ -1,27 +1,22 @@
-import Game.Levels.DemoWorld
-import Game.Levels.MyWorld
+import Game.Levels.LogicWorld
 
 -- Here's what we'll put on the title screen
-Title "Hello World Game"
+Title "Theorem proving with Lean"
 Introduction
 "
-This text appears on the starting page where one selects the world/level to play.
-You can use **markdown**.
+This game introduces Lean's basic tactics and strategies.
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
-
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use **markdown**.
+Theorem proving with Lean Version 0.0.
+Authors: MJ, RS
+Github: https://github.com/RobinSchabert/lean-konstanz
 "
 
 /-! Information to be displayed on the servers landing page. -/
 Languages "en"
-CaptionShort "Game Template"
-CaptionLong "You should use this game as a template for your own game and add your own levels."
+CaptionShort "Proving with Lean"
+CaptionLong "A game to learn Lean's basic tactics and strategies."
 -- Prerequisites "" -- add this if your game depends on other games
 -- CoverImage "images/cover.png"
 
