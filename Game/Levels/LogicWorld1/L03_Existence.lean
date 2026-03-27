@@ -2,19 +2,20 @@ import Game.Metadata
 import Mathlib.Data.Nat.Basic
 import Mathlib.Tactic.Linarith
 
-World "LogicWorld"
+World "LogicWorld1"
 Level 3
 
-Title "Use Existence Statements."
+Title "Use Existence"
 
-Introduction "You can use the `choose` tactic to take advantage of an
+Introduction "With the `choose` tactic you can take advantage of an
 existence statement among your hypotheses.
 
-If the hypothesis is `h: 2 ∣ 6` then `choose k hk using h` will give
-you an object specied in the existence statement with name `k` and
-a new hypothesis `hk` about its property.
+If the hypothesis is `h: 2 ∣ 6` then `choose m hm using h` will give
+you an object named `m` and
+a new hypothesis `hm` which assures the property for `m` as given in
+the existence statement.
 
-Don't worry if the original hypothesis `h` will disappear in this process.
+Don't worry if the original hypothesis `h` disappears in this process.
 We will learn techniques how to preserve it for a later use.
 "
 

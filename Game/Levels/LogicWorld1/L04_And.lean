@@ -2,15 +2,15 @@ import Game.Metadata
 import Mathlib.Data.Nat.Basic
 import Mathlib.Tactic.Linarith
 
-World "LogicWorld"
+World "LogicWorld1"
 Level 4
 
-Title "Prove And Statements."
+Title "Prove Conjuctions"
 
 Introduction "Our next statement type is conjuction `P ∧ Q`.
 To generate proofs of this type, we use the `constructor` tactic
 which splits the original goal into separate goals for each
-of the propositions `P, Q`contained in the conjunction.
+of the propositions `P, Q` contained in the conjunction.
 "
 
 Statement: 2 ∣ 6 ∧ 3 ∣ 6 := by
