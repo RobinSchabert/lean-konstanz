@@ -1,7 +1,7 @@
 import Game.Metadata
 import Mathlib.Data.Int.Basic
 import Mathlib.Tactic.Linarith
-import Game.Levels.LogicWorld1
+
 
 World "LogicWorld2"
 Level 1

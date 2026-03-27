@@ -1,6 +1,8 @@
 import Game.Levels.LogicWorld1
 import Game.Levels.LogicWorld2
 
+Dependency LogicWorld1 → LogicWorld2
+
 
 -- Here's what we'll put on the title screen
 Title "Theorem proving with Lean"
