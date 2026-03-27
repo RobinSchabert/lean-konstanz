@@ -8,7 +8,7 @@ Level 2
 Title "Prove Existence"
 
 Introduction "The classical abbreviation of the existence statement
-encountered in the previous level is the divisibilty statement $2 ∣ 6$.
+encountered in the previous level is the divisibilty statement `2 ∣ 6`.
 In the following we will use this abbreviation which is predefined in Lean
 as `a ∣ b :⇔ ∃ k:ℕ, b = a*k`. In Lean, the divisibilty statement can be treated
 exactly like the equivalent existence statement.

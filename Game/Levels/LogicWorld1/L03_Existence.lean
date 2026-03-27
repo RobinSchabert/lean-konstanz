@@ -16,7 +16,8 @@ a new hypothesis `hm` which assures the property for `m` as given in
 the existence statement.
 
 Don't worry if the original hypothesis `h` disappears in this process.
-We will learn techniques how to preserve it for a later use.
+We will learn techniques how to preserve hypotheses for later use in
+the same proof.
 "
 
 Statement(n:ℕ)(h: 6 ∣ n): 2 ∣ n := by
