@@ -29,7 +29,7 @@ by typing `\\|`. The proof has to be given in the following lines (with a consta
 of at least one blank).
 "
 
-Statement(n:Nat): ¬(2 ∣ n) → ¬(4 ∣ n) := by
+Statement(n:ℕ): ¬(2 ∣ n) → ¬(4 ∣ n) := by
   sorry
 
 Conclusion "Congratulation, you have finished your first proof by contradiction!"

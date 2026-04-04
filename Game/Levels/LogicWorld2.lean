@@ -1,6 +1,11 @@
 import Game.Levels.LogicWorld2.L01_Implication
 import Game.Levels.LogicWorld2.L02_Implication
 import Game.Levels.LogicWorld2.L03_Implication
+import Game.Levels.LogicWorld2.L04_Negation
+import Game.Levels.LogicWorld2.L05_Negation
+import Game.Levels.LogicWorld2.L06_Induction
+import Game.Levels.LogicWorld2.L07_Induction
+import Game.Levels.LogicWorld2.L08_Induction
 
 World "LogicWorld2"
 Title "Logic Part 2"
