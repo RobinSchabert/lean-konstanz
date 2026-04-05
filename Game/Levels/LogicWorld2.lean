@@ -12,9 +12,9 @@ Title "Logic Part 2"
 
 Introduction
 "
-We continue our journey by introducing additional elementary statement types:
-**implications** and ... .
+We continue our journey with additional elementary statement types:
+**implications** and **negations**.
 
 For each type `T` we again discuss how to construct proofs of type `T`
-and how to use hypotheses of type `T`.
+and how to use hypotheses of type `T`. Moreover proofs by induction are introduced.
 "

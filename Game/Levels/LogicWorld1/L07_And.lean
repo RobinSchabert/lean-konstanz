@@ -25,6 +25,9 @@ Conclusion "Congratulation, you have mastered the next level!"
 /--
 In conjunctions like `h : P ∧ Q ∧ R` use `obtain ⟨hP,hQ,hR⟩ := h` to
 introduce named hypotheses to each component.
+
+In disjunctions like `h : P ∨ Q ∨ R` use `obtain hP | hQ | hR := h` to
+introduce named hypotheses for the separate cases.
 -/
 TacticDoc obtain
 

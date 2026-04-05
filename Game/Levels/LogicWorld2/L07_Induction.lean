@@ -22,8 +22,8 @@ Statement(n:ℕ) : 3 ∣ (n^3 + 2*n) := by
 Conclusion "Congratulation - another proof by induction!"
 
 /--
-To prove simplify or solve (in)equalities by computing arithmetic expressions involving
-explicit number representations, the tactic `norm_num` can be used. It can also be
+To prove or simplify (in)equalities by computing arithmetic expressions involving
+explicit numbers, the tactic `norm_num` can be used. It can also be
 applied to some hypothsis `h` by typing `norm_num at h`.
 -/
 TacticDoc norm_num

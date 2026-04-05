@@ -1,7 +1,9 @@
 import Game.Levels.LogicWorld1
 import Game.Levels.LogicWorld2
+import Game.Levels.LogicWorld3
 
 Dependency LogicWorld1 → LogicWorld2
+Dependency LogicWorld2 → LogicWorld3
 
 
 -- Here's what we'll put on the title screen

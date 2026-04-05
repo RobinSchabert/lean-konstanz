@@ -46,4 +46,11 @@ If you need the conclusion of some theorem `T` as an auxiliary statement, you ca
 `have c := T a` or `have c := by apply T a` if `a` proves the assumption of `T`.
 -/
 TacticDoc «have»
-NewTactic «have»
+
+/--
+If the hypotheses are obviously contradictory, you can always close the current goal
+with the tactic `contradiction`. In particular, it covers cases like
+`1=2` or the occurence of some hypothesis `h: P` together with its negation `h': ¬ P`.
+-/
+TacticDoc contradiction
+NewTactic «have» contradiction
