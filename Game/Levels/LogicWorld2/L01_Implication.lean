@@ -23,10 +23,13 @@ Statement(n:ℕ): 6 ∣ n → 2 ∣ n := by
 
 Conclusion "Congratulation, you have proved your first implication!"
 
-/- Use these commands to add items to the game's inventory. -/
 /--
 If your goal has type `P → Q`, the tactic `intro h` adds a hypothesis `h` of
 type `P` to your assets and flips your goal to type `Q`.
+
+For goals of type `∀ x:X, P`, using `intro a` introduces
+an object `a` of type `X`. Your goal changes to `P`
+with the parameter `x` replaced by your chosen name `a`.
 -/
 TacticDoc intro
 NewTactic intro

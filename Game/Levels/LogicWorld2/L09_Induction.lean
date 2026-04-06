@@ -6,7 +6,7 @@ import Mathlib.Tactic
 
 
 World "LogicWorld2"
-Level 7
+Level 9
 
 Title "Proof by Induction"
 

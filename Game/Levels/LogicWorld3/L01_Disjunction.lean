@@ -37,6 +37,6 @@ TacticDoc right
 If your goal is matched exactly by some hypothesis `h`, you can close it
 with `exact h`.
 -/
-TacticDoc left
+TacticDoc exact
 
-NewTactic left right
+NewTactic left right exact

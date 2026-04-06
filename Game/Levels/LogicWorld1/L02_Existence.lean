@@ -30,6 +30,9 @@ If your goal is an (in)equality statement involving
 simple linear arithmetic operations,
 the `linarith` tactic may help to prove it using already
 available (in)equalities among your hypotheses.
+
+The tactic `linarith` also proves `False` if (in)equalities
+in the hypotheses contradict each other.
 -/
 TacticDoc linarith
 NewTactic linarith

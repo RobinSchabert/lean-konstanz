@@ -24,6 +24,9 @@ Conclusion "Congratulation, you have mastered the next level!"
 /--
 With `apply h hP` you prove a goal of type `Q` if `h` is of type `P → Q`
 and `hP` is of type `P`.
+
+If `h` is of type `∀ x:X, P` and `b` is of type `X` then `apply h b` closes a goal of type
+`P` with `b` in place of `x`.
 -/
 TacticDoc apply
 NewTactic apply
