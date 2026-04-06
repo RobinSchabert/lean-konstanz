@@ -10,7 +10,7 @@ Title "Indirect Proof"
 
 Introduction
 "
-Remember that `a≠0` is an abbreviation of `¬(a=0)`.
+Recall that `a≠0` is an abbreviation of `¬(a=0)`.
 "
 
 Statement(a b:ℕ)(h: b≠0)(d: a ∣ b):  a ≠ 0 := by

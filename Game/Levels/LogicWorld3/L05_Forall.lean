@@ -13,7 +13,7 @@ Introduction
 general objects named `a` and `b` of type `X`. Your goal changes to `P`
 with the parameters `x` and `y` replaced by your chosen names `a` and `b`.
 
-The idea in this prove is to split the situation in the easy case `a=b`
+The idea in this proof is to split the situation in the easy case `a=b`
 and the more difficult case `a<b` which has been covered in the previous step.
 
 If a hypothesis `h1: a<b` is available you can prove `c*a < c*b`

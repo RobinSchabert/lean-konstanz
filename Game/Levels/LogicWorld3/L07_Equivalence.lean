@@ -22,19 +22,17 @@ applied to show `k<1` which can be turned into a contradiction afterwards.
 
 If `pa: a>0` and `h: a*k < a*1` are available then the detailed
 chain of commands is:
-
-Get the equivalence: `have s1: a*k < a*1 ↔ k < 1 := Nat.mul_lt_mul_left pa`.
-Extract the implication: `have s2: a*k < a*1 → k < 1 := s1.mp`.
-Extract the conclusion: 'have s3: k < 1 := s2 h`
+1. Get the equivalence: `have s1: a*k < a*1 ↔ k < 1 := Nat.mul_lt_mul_left pa`.
+2. Extract the implication: `have s2: a*k < a*1 → k < 1 := s1.mp`.
+3. Extract the conclusion: `have s3: k < 1 := s2 h`
 
 Abbreviated in a single expression, this reads:
-'have s3: k < 1 := (Nat.mul_lt_mul_left pa).mp h`.
+`have s3: k < 1 := (Nat.mul_lt_mul_left pa).mp h`.
 
 In case you need the other implication direction use `mpr` (modus ponens reverse)
 instead of `mp` (modus ponens).
 
-Note that other theorems inventory may be useful for this task.
-- check them out!
+Note that other theorems inventory may be useful for this task - check them out!
 "
 
 /--
