@@ -1,9 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
--- import Mathlib.Tactic.Linarith
--- import Mathlib.Tactic.Ring
-import Mathlib.Tactic
-
 
 World "LogicWorld2"
 Level 9
@@ -21,10 +16,5 @@ Statement(n:ℕ) : 3 ∣ (n^3 + 2*n) := by
 
 Conclusion "Congratulation - another proof by induction!"
 
-/--
-To prove or simplify (in)equalities by computing arithmetic expressions involving
-explicit numbers, the tactic `norm_num` can be used. It can also be
-applied to some hypothsis `h` by typing `norm_num at h`.
--/
-TacticDoc norm_num
+
 NewTactic norm_num

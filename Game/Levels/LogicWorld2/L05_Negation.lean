@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Int.Basic
-import Mathlib.Tactic.Linarith
 
 World "LogicWorld2"
 Level 5

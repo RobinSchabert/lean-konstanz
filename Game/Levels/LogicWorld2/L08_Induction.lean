@@ -1,9 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
--- import Mathlib.Tactic.Linarith
--- import Mathlib.Tactic.Ring
-import Mathlib.Tactic
-
 
 World "LogicWorld2"
 Level 8
@@ -30,16 +25,5 @@ Statement(n:ℕ) : 2^n ≥ n+1 := by
 
 Conclusion "Congratulation - your first proof by induction!"
 
-/--
-To prove a proposition involving a variable `n` of some inductive type (like the naturals)
-the tactic `induction' n with m IH` can be used. The first name after `with` replaces the
-variable name `n` during the induction proof in which the second name is used to denote the
-induction hypothesis.
--/
-TacticDoc induction'
-/--
-To prove an (in)equality in which the relevant variables appear in products or
-powers you may try the tactic `ring_nf`.
--/
-TacticDoc ring_nf
+
 NewTactic induction' ring_nf

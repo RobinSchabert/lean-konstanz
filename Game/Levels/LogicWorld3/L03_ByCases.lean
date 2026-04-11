@@ -31,10 +31,4 @@ Statement(a :ℕ)(h: a≠0): 0<a := by
 
 Conclusion "You have made it!"
 
-/--
-You can close the current goal if you can
-prove it under the hypotheses `P` and `¬P` separately. Use the tactic
-`by_cases h: P`.
--/
-TacticDoc by_cases
 NewTactic by_cases

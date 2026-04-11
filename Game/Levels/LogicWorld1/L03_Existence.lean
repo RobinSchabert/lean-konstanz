@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic.Linarith
 
 World "LogicWorld1"
 Level 3
@@ -26,9 +24,4 @@ Statement(n:ℕ)(h: 6 ∣ n): 2 ∣ n := by
 Conclusion "Congratulation, you have completed the next level!"
 
 /- Use these commands to add items to the game's inventory. -/
-/--
-To benefit from a hypothesis `h` of type `∃ x:X, P` you can use the tactic
-`choose u hu using h`.
--/
-TacticDoc choose
 NewTactic choose

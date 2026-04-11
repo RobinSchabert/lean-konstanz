@@ -1,7 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic
-
 
 World "LogicWorld3"
 Level 6
@@ -14,11 +11,14 @@ Since the equivalence statement `P ↔ Q` is an abbrevition of `(P → Q)∧(Q �
 it can be proved with the `constructor` tactic followed by the proof of two
 implications.
 
-In this task you can use the theorem `Nat.mul_lt_mul_of_pos_left` in a direct proof
-and the result of the previous step as hypothesis `P` in an indirect argument.
+The first implication can be solved with the result of the previous step
+(in the form of hypothesis `P`) in an _indirect_ argument.
+Just specialize `P` with suitable numbers.
 
-To apply the forall hypothesis `P` use `apply P u v le` if `u` and `v`
-are natural numbers,`le` is of type `u ≤ v` and your goal is `c*u ≤ c*v`.
+The second implication can be solved with theorem `Nat.mul_lt_mul_of_pos_left`.
+because the goal excatly matches the conclusion if you list the premises
+`H: a<b` and `h: c>0` behind the name of the theorem, i.e.
+`exact Nat.mul_lt_mul_of_pos_left H h`.
 
 From the next level onward, you can access this result under the name
 `Nat.mul_lt_mul_left`.

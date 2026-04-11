@@ -1,7 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic
-
 
 World "LogicWorld2"
 Level 10

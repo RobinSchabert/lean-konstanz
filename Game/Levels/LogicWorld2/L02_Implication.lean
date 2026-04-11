@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Int.Basic
-import Mathlib.Tactic.Linarith
 
 World "LogicWorld2"
 Level 2
@@ -9,24 +7,18 @@ Title "Use Implication"
 
 Introduction
 "If one of your hypotheses is of type `h : P → Q` and
-you have a hypothesis `hP` of type `P`, you can close a goal of
-type `Q` by _applying_ the implication to `hP`.
+you have a hypothesis `p` of type `P`, you can _transform_
+`h`to type `Q` by _using_ the implication with `p`. This is achieved
+with te tactic `specialize h p`.
 
-This is achieved by typing `apply h hP`.
+If a hypothesis `e` has exactly the type of your goal, you can close it
+by typing `exact e`.
 "
 
-Statement(n:ℕ): ((2 ∣ n  → 6 ∣ n) ∧ 2 ∣ n) → 6 ∣ n := by
+Statement(P Q R: Prop)(h1: P  → Q )(h2: Q  → R )(p: P): R := by
   sorry
 
-Conclusion "Congratulation, you have mastered the next level!"
+Conclusion "Now let's use this in a more interesting scenario ..."
 
 /- Use these commands to add items to the game's inventory. -/
-/--
-With `apply h hP` you prove a goal of type `Q` if `h` is of type `P → Q`
-and `hP` is of type `P`.
-
-If `h` is of type `∀ x:X, P` and `b` is of type `X` then `apply h b` closes a goal of type
-`P` with `b` in place of `x`.
--/
-TacticDoc apply
-NewTactic apply
+NewTactic specialize exact

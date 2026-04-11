@@ -1,7 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic
-
 
 World "LogicWorld2"
 Level 7
@@ -28,9 +25,5 @@ Statement(n:ℕ): (∃ k:ℕ, n = 2*k+1) → ¬(2 ∣ n) := by
 
 Conclusion "Success - you have mastered the indirect proof!"
 
-/--
-You can close the current goal of type `P` if you can show a contradiction
-under the negated hypothesis `c: ¬P` using the tactic `by_contra c`.
--/
-TacticDoc by_contra
+
 NewTactic by_contra

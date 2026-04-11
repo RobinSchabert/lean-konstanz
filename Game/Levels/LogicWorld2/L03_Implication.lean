@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Int.Basic
-import Mathlib.Tactic.Linarith
 
 World "LogicWorld2"
 Level 3
@@ -8,8 +6,9 @@ Level 3
 Title "Use Implication"
 
 Introduction
-"In this example, a proof of `2 ∣ n` is not readily available which stops you
-from applying the implication that results from the `intro` tactic. You just
+"In this example, the implication hypothis has no separate name and a
+proof of `2 ∣ n` is not readily available which stops you
+from specializing the implication after using the `intro` tactic. You just
 know that `4 ∣ n` holds and on paper you would probably use this knowledge to
 infer `2 ∣ n` and then conclude with the implication.
 
@@ -19,7 +18,9 @@ you can `apply` the implication to switch the goal to the missing premise
 `2 ∣ n`. Now you can easily finish the proof.
 "
 
-Statement(n:ℕ): (2 ∣ n  → 6 ∣ n) ∧ 4 ∣ n → 6 ∣ n := by
+Statement(n:ℕ): ((2 ∣ n  → 6 ∣ n) ∧ 4 ∣ n) →  6 ∣ n := by
   sorry
 
 Conclusion "Congratulation, you have proved yet another implication!"
+
+NewTactic apply

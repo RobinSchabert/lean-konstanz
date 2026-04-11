@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic.Linarith
 
 World "LogicWorld1"
 Level 2
@@ -25,14 +23,4 @@ Statement (a:ℕ): a ∣ a := by
 Conclusion "Congratulation, you have completed the second level!"
 
 /- Use these commands to add items to the game's inventory. -/
-/--
-If your goal is an (in)equality statement involving
-simple linear arithmetic operations,
-the `linarith` tactic may help to prove it using already
-available (in)equalities among your hypotheses.
-
-The tactic `linarith` also proves `False` if (in)equalities
-in the hypotheses contradict each other.
--/
-TacticDoc linarith
 NewTactic linarith

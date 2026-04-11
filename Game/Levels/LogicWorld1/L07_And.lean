@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic.Linarith
 
 World "LogicWorld1"
 Level 7
@@ -20,15 +18,5 @@ Statement(a b c e:ℕ)(h : e ∣ a ∧ (2*e) ∣ b ∧ (3*e) ∣ c ): e ∣ (a +
   sorry
 
 Conclusion "Congratulation, you have mastered the next level!"
-
-
-/--
-In conjunctions like `h : P ∧ Q ∧ R` use `obtain ⟨hP,hQ,hR⟩ := h` to
-introduce named hypotheses to each component.
-
-In disjunctions like `h : P ∨ Q ∨ R` use `obtain hP | hQ | hR := h` to
-introduce named hypotheses for the separate cases.
--/
-TacticDoc obtain
 
 NewTactic obtain

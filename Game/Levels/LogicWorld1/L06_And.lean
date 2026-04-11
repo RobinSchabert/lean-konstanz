@@ -1,6 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic.Linarith
 
 World "LogicWorld1"
 Level 6
@@ -26,17 +24,5 @@ Statement(a b c:ℕ)(h : a ∣ b ∧ b ∣ c): a ∣ c := by
   sorry
 
 Conclusion "Congratulation, you have mastered the next level!"
-
-/--
-To rewrite the left side `a` of an equality `e : a = b` by the right side `b`
-in the current goal use `rw[e]`.
-
-To rewrite within a hypothesis `h` use `rw[e] at h`.
-
-To perform several rewrites in a sequence, use `rw[e,f,g]`.
-
-If you need the opposite rewrite direction use `rw[← e]`.
--/
-TacticDoc rw
 
 NewTactic rw

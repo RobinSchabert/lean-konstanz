@@ -1,7 +1,4 @@
 import Game.Metadata
-import Mathlib.Data.Nat.Basic
-import Mathlib.Tactic
-
 
 World "LogicWorld3"
 Level 7
@@ -43,10 +40,10 @@ TheoremDoc ne_zero_of_dvd_ne_zero as "ne_zero_of_dvd_ne_zero"
 
 /--
 If you know `p: k>0` and `lt: k*u < k*v` then a goal of type `u < v`
-is proved by `apply (Nat.mul_lt_mul_left p).mp lt`.
+is proved by `exact (Nat.mul_lt_mul_left p).mp lt`.
 
 Conversely, if you know `p: k>0` and `lt: u < v` a goal of type `k*u < k*v`
-is proved with `apply (Nat.mul_lt_mul_left p).mpr lt`.
+is proved with `exact (Nat.mul_lt_mul_left p).mpr lt`.
 -/
 TheoremDoc Nat.mul_lt_mul_left as "Nat.mul_lt_mul_left"
 NewTheorem ne_zero_of_dvd_ne_zero Nat.mul_lt_mul_left
