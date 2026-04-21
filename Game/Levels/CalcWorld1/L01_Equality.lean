@@ -1,5 +1,4 @@
 import Game.Metadata
--- import Batteries.Data.Rat.Basic
 
 World "CalcWorld1"
 Level 1
@@ -7,11 +6,14 @@ Level 1
 Title "Equality Chains"
 
 Introduction "We begin with chains of equalities. In the first task, you
-should find a necessary condition for the solvability of a small linear system.
+should derive the value of `(a+b)^2` given the value of `(a-b)^2` and
+the one of `a*b`. Hint: compute the difference between the first and second
+binomial formula and use the `ring_nf` and `rw` tactics.
 "
 
-Statement (x y : ℚ) (e1 : 3*x-2*y = 6) (e2 : 2*x-3*y = -1) : x = 4 ∧ y = 3 := by
+Statement {a b : ℚ} (h1 : a - b = 4) (h2 : a * b = 1) : (a + b) ^ 2 = 20 := by
   sorry
 
+Conclusion "Congratulation, you have completed your first chain calculation!"
 
-Conclusion "Congratulation, you have completed your first proof!"
+NewTactic  «calc»

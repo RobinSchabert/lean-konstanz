@@ -164,4 +164,37 @@ prove it under the hypotheses `P` and `¬P` separately. Use the tactic
 -/
 TacticDoc by_cases
 
--- in W3 L04
+-- in CW1 L01
+
+/--
+If `a ∼₁ b` and `b ∼₂ c` implies `a ∼₃ c` then a calc sequence of the form
+```
+calc
+  a ∼₁ b := pab
+  _ ∼₂ c := pbc
+```
+closes a goal of type `a ∼₃ c` when `pab` and `pbc` are proof terms for the
+respective relations and the transitivity rule has been registered.
+-/
+TacticDoc «calc»
+
+-- in CW1 L03
+/--
+The tactic `rel[hab]` closes a goal of type `f a ≤ f b` provided
+`f` is a registered monotonic function like `f x = t*x` with
+some non-negative `t` or `f x = t+x` for any number `t`. The
+hypothesis `hab` has to assure the corresponding relation between
+the arguments, i.e. `hab: a ≤ b`.
+
+The tactic also works for other inequality relations.
+-/
+TacticDoc rel
+
+/--
+The tactic `show <type> by <tactic>` produces a term of the described type
+if the proof after `by` is successful.
+
+It can be used for example in `rw[show <type> by <tactic>]` to generate
+an equality or an equivalence without naming it with a separate `have` command.
+-/
+TacticDoc «show»

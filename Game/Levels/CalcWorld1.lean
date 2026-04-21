@@ -1,4 +1,7 @@
 import Game.Levels.CalcWorld1.L01_Equality
+import Game.Levels.CalcWorld1.L02_Equality
+import Game.Levels.CalcWorld1.L03_Inequality
+import Game.Levels.CalcWorld1.L04_Inequality
 
 World "CalcWorld1"
 Title "Calculations"
@@ -28,5 +31,6 @@ calc
   a ∼₁ b := pab
   _ ∼₂ c := pbc
 ```
-closes a goal of type `a ∼₃ c`.
+closes a goal of type `a ∼₃ c`. Here, `pab` and `pbc` are proof terms for the
+respective relations.
 "
