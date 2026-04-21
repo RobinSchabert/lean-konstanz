@@ -75,10 +75,10 @@ TacticDoc intro
 
 -- in W2 L02
 /--
-With `specialize h p` you prove a goal of type `Q` if `h` is of type `P → Q`
-and `p` is of type `P`.
+If `h` is of type `P → Q` and `p` is of type `P` then
+`specialize h p` converts `h` into type `Q`.
 
-If `h` is of type `∀ x:X, P` and `b` is of type `X` then `specialize h b` closes a goal of type
+If `h` is of type `∀ x:X, P` and `b` is of type `X` then `specialize h b` converts `h` to type
 `P` with `b` in place of `x`.
 -/
 TacticDoc specialize
