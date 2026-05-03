@@ -198,3 +198,51 @@ It can be used for example in `rw[show <type> by <tactic>]` to generate
 an equality or an equivalence without naming it with a separate `have` command.
 -/
 TacticDoc «show»
+
+/--
+The tactic `rfl` closes a goal of type `a ∼ b` if `sim` is a registered
+reflexive relation. It tries to reduce `a` and `b` to an identical expresion.
+-/
+TacticDoc rfl
+
+/--
+The tactic `unfold A` resolves the defined name `A` by the expression
+it abbreviates. You can unfold various names at once by writing `unfold A B C`.
+It is aso possible to unfold definitions `at` some hypothesis.
+-/
+TacticDoc unfold
+
+/--
+The tactic `dsimp[A]` resolves the defined name `A` and evaluates
+function expressions when possible. It is similar to `unfold` but
+acts somewhat differently with respect to recursive definitions and
+sidde effects.
+
+It is aso possible to use the `dsimp` tactic `at` some hypothesis.
+-/
+TacticDoc dsimp
+
+/--
+The tactic `trivial` tries several tactics like `rfl`, `exact True.intro`,
+`contradiction` or `exact h` with an available hypothesis `h`that matches the goal.
+-/
+TacticDoc trivial
+
+/--
+The tactic `ext x` transforms a goal of type set equality `A = B` into
+the equivalence `x ∈ A ↔ x ∈ B`.
+-/
+TacticDoc ext
+
+/--
+The tactic `simp` is a very powerful simplifier which resolves definitions
+and also applies theorems. Use it carefully because it may be
+quite time consuming.
+-/
+TacticDoc simp
+
+/--
+The tactic `decide` closes goals which are decidable, i.e. for which an
+algorithmic solution method has been registered.
+-/
+TacticDoc decide
