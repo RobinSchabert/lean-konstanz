@@ -3,11 +3,13 @@ import Game.Levels.LogicWorld2
 import Game.Levels.LogicWorld3
 import Game.Levels.CalcWorld1
 import Game.Levels.SetWorld1
+import Game.Levels.SetWorld2
 
 Dependency LogicWorld1 → LogicWorld2
 Dependency LogicWorld2 → LogicWorld3
 Dependency LogicWorld3 → CalcWorld1
 Dependency LogicWorld3 → SetWorld1
+Dependency SetWorld1 → SetWorld2
 
 -- Here's what we'll put on the title screen
 Title "Theorem proving with Lean"

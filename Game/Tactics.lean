@@ -246,3 +246,8 @@ The tactic `decide` closes goals which are decidable, i.e. for which an
 algorithmic solution method has been registered.
 -/
 TacticDoc decide
+
+/--
+The tactic `reduce` aggressively transforms the goal to its most basic normal form.
+-/
+TacticDoc reduce

@@ -15,7 +15,7 @@ distinguish it from other uses. In this task, it suffices to mark the type of on
 of the sets. The other is then correctly interpreted automatically.
 "
 
-Statement (α : Type) (a b c : α) : ({a, b, c} : (Set α)) = {b,c,a} := by
+Statement (U : Type) (a b c : U) : ({a, b, c} : (Set U)) = {b,c,a} := by
   sorry
 
 Conclusion "... well done!"

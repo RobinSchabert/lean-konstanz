@@ -15,9 +15,9 @@ Introduction
 In Lean, a set $A$ of elements of type `U` is identified with a
 function `A` which maps every instance `u` of `U` to a proposition.
 To prove that `a:U` belongs to $A$, the task is to show the proposition `A a`.
-Adding some syntactic sugar, the proposition `A u` can also be written in the form
+Adding some syntactic sugar, the proposition `A a` can also be written in the form
 `a ∈ A` (with `\\in` for `∈`). With the same amount of sugar, the type `Set U`
-is just an approximation of `U → Prop`. Its instances are all possible subsets of
+is just an abbreviation of `U → Prop`. Its instances are all possible subsets of
 `U`.
 
 In this world, we consider the set of all natural numbers larger than `2` which

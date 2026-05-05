@@ -12,9 +12,16 @@ Alternatively, you can try `apply Set.Subset.antisymm` which
 translates the goal into the subgoals `A ⊆ B` and `B ⊆ A`.
 "
 
+TheoremTab "="
+
+/-- The theorem `Set.Subset.antisymm` applied to a goal of type set equality `A = B`
+transforms it to two goals  `A ⊆ B` and `B ⊆ A`.
+-/
+TheoremDoc Set.Subset.antisymm as "Subset.antisymm" in "="
+
 Statement: {n:ℕ | n>1 ∧ n<4} = {n:ℕ | n<4 ∧ n>1} := by
   sorry
 
 Conclusion "... well done!"
 
-NewTactic trivial
+NewTactic ext

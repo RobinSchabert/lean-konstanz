@@ -5,7 +5,7 @@ Level 4
 
 Title "Proving Subset Relations"
 
-Introduction "The subset relation `A ⊆ B` (write `\\sub` for `⊆`) for `subsets of
+Introduction "The subset relation `A ⊆ B` (write `\\sub` for `⊆`) for subsets of
 type `U` is essentially equivalent to the universal quantification
 `∀ x:U, x ∈ A → x ∈ B`. In particular, you can use `intro x hx` to start its proof.
 
@@ -31,12 +31,12 @@ In this task you should show three trivial subset statements: The empty set `{}`
 and every set is subset of the universe `Set.univ` which contains all instances of
 the underlying type.
 
-While the element relation for the emptys set is equivalent to `False` and can be closed
+While the element relation for the empty set is equivalent to `False` and can be closed
 by `contradiction`, the one for the universe is equal to `True` which can be
 closed with `exact True.intro`.
 
 The tactic `trivial` combines several tactics like `rfl`, `exact True.intro` or
-`contradiction` and thus can be sed throughout.
+`contradiction` and thus can be used throughout.
 "
 
 Statement (U : Type) (A : Set U) : ∅ ⊆ A ∧ A ⊆ A ∧ A ⊆ Set.univ := by
