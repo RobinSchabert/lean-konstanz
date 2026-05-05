@@ -32,21 +32,8 @@ instead of `mp` (modus ponens).
 Note that other theorems inventory may be useful for this task - check them out!
 "
 
-/--
-Given `h1: b≠0` and `h2: a∣b`, the application `ne_zero_of_dvd_ne_zero h1 h2` yields
-a proof of `a≠0`.
--/
-TheoremDoc ne_zero_of_dvd_ne_zero as "ne_zero_of_dvd_ne_zero"
 
-/--
-If you know `p: k>0` and `lt: k*u < k*v` then a goal of type `u < v`
-is proved by `exact (Nat.mul_lt_mul_left p).mp lt`.
-
-Conversely, if you know `p: k>0` and `lt: u < v` a goal of type `k*u < k*v`
-is proved with `exact (Nat.mul_lt_mul_left p).mpr lt`.
--/
-TheoremDoc Nat.mul_lt_mul_left as "Nat.mul_lt_mul_left"
-NewTheorem ne_zero_of_dvd_ne_zero Nat.mul_lt_mul_left
+NewTheorem ne_zero_of_dvd_ne_zero  Nat.mul_lt_mul_left
 
 Statement(a b:ℕ): a ∣ b ∧ b ∣ a → a = b := by
   sorry

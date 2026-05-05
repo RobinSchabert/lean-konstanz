@@ -17,11 +17,6 @@ If a hypothesis `h1: a<b` is available you can prove `c*a < c*b`
 by the tactic `apply Nat.mul_lt_mul_of_pos_left h1 h`.
 "
 
-/--
-Given `h1: a<b` and `h2: c>0`, the application `Nat.mul_lt_mul_of_pos_left h1 h2` yields
-a proof of `c*a < c*b`.
--/
-TheoremDoc Nat.mul_lt_mul_of_pos_left as "Nat.mul_lt_mul_of_pos_left"
 NewTheorem Nat.mul_lt_mul_of_pos_left
 
 

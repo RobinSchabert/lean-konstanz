@@ -11,13 +11,7 @@ In case you want to explicitly switch between `x ∈ Aᶜ` and `x ∉ A`,
 the theorem `Set.mem_compl_iff` will be helpful.
 "
 
-TheoremTab "□ᶜ"
-
-/-- The theorem `Set.mem_compl_iff` applied to a set `A` and an element `x`
-of corresponding type gives you a proof of `x ∈ Aᶜ ↔ x ∉ A`. In particular,
-the theorem can be used for rewriting.
--/
-TheoremDoc Set.mem_compl_iff as "mem_compl_iff" in "□ᶜ"
+NewTheorem Set.mem_compl_iff
 
 Statement (U: Type) (A: Set U): (Aᶜ)ᶜ = A := by
   sorry

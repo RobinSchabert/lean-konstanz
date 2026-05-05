@@ -1,5 +1,6 @@
 import GameServer
 import Game.Tactics
+import Game.Theorems
 import Mathlib.Data.Real.Basic
 import Mathlib.Tactic
 
