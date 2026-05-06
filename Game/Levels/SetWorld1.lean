@@ -6,6 +6,7 @@ import Game.Levels.SetWorld1.L05_Basic
 import Game.Levels.SetWorld1.L06_Basic
 import Game.Levels.SetWorld1.L07_Basic
 import Game.Levels.SetWorld1.L08_Basic
+import Game.Levels.SetWorld1.L09_Basic
 
 World "SetWorld1"
 Title "Set Basics"

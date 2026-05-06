@@ -5,16 +5,19 @@ Level 8
 
 Title "Dealing with Enumeration Sets"
 
-Introduction "Element relations with enumeration sets like `3 ∈ {1, 2, 3, 5}`
-which can be decided algorithmically can be proved with the `decide` tactic.
+Introduction "When dealing with general enumeration sets, the `simp` tactic reduces
+element expressions to disjunctions of equalities which can then be treated
+in the usual way. Start your proof with `ext x; simp` and proceed.
 
-If the set is declared as a `Finset`, even subset or equality relations can be
-proved with a simple application of `decide`
+Note: Since curly brackets are used for various purposes, the specification
+of an enumeration set of type `Set U` requires a type specification to
+distinguish it from other uses. In this task, it suffices to mark the type of one
+of the sets. The other is then correctly interpreted automatically.
 "
 
-Statement: {3, 2, 5, 1} = ({1, 2, 3, 5} : (Finset ℕ)) := by
+Statement (U : Type) (a b c : U) : ({a, b, c} : (Set U)) = {b,c,a} := by
   sorry
 
-Conclusion "... that was easy again."
+Conclusion "... well done!"
 
-NewTactic decide
+NewTactic simp
